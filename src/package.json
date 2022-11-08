@@ -1,0 +1,20 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/BrystoQ/API_ODM_course.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrystoQ/API_ODM_course/issues"
+  },
+  "homepage": "https://github.com/BrystoQ/API_ODM_course#readme"
+}
