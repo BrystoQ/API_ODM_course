@@ -5,7 +5,7 @@ exports.listAllPosts = (req, res) => {
     if (error) {
       res.status(500);
       console.log(error);
-      res.json({ message: "Erreur serveur." });
+      res.json({ message: "Server error." });
     } else {
       res.status(200);
       res.json(posts);
@@ -20,7 +20,7 @@ exports.createAPost = (req, res) => {
     if (error) {
       res.status(401);
       console.log(error);
-      res.json({ message: "Reqûete invalide." });
+      res.json({ message: "Invalid Request." });
     } else {
       res.status(201);
       res.json(post);
@@ -33,7 +33,7 @@ exports.getAPost = (req, res) => {
     if (error) {
       res.status(500);
       console.log(error);
-      res.json({ message: "Erreur serveur." });
+      res.json({ message: "Server error." });
     } else {
       res.status(200);
       res.json(post);
@@ -50,7 +50,7 @@ exports.updateAPost = (req, res) => {
       if (error) {
         res.status(500);
         console.log(error);
-        res.json({ message: "Erreur serveur." });
+        res.json({ message: "Server error." });
       } else {
         res.status(200);
         res.json(post);
@@ -64,10 +64,10 @@ exports.deleteAPost = (req, res) => {
     if (error) {
       res.status(500);
       console.log(error);
-      res.json({ message: "Erreur serveur." });
+      res.json({ message: "Server error." });
     } else {
       res.status(200);
-      res.json({ message: "Article supprimé" });
+      res.json({ message: "Deleted!" });
     }
   });
 };
